@@ -1,0 +1,46 @@
+body {
+	margin: 0px;
+	scroll-behavior: smooth;
+}
+
+header {
+	background-color: #db0000;
+	color: white;
+	columns: 2;
+}
+
+h1 {
+	margin: auto;
+}
+
+nav ul {
+	list-style: none;
+	text-align: right;
+	margin: 0;
+	padding: 0;
+	margin-right: 5rem;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0px 2px 0px 2px;
+}
+
+.menu {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	font-size: 150%;
+	text-transform: uppercase;
+	padding: 1.5rem;
+}
+
+.menu:hover {
+	background-color: white;
+	color: #db0000;
+}
+
+.active {
+	background-color: white;
+	color: #db0000;
+}
