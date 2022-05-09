@@ -6,27 +6,43 @@ body {
 header {
 	background-color: #db0000;
 	color: white;
-	columns: 2;
 }
 
 h1 {
-	margin: auto;
+	display: none;
 }
 
-nav ul {
+nav {
+	width: 100vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin: 1rem;
+}
+
+.logo img {
+	max-width: 17vw;
+}
+
+.menu {
+	margin-top: auto;
+}
+
+nav div.menu ul {
 	list-style: none;
-	text-align: right;
+	text-align: center;
 	margin: 0;
 	padding: 0;
-	margin-right: 5rem;
 }
 
-nav ul li {
+nav div.menu ul li {
 	display: inline-block;
 	margin: 0px 2px 0px 2px;
 }
 
-.menu {
+.menu-item {
 	display: inline-block;
 	color: white;
 	text-decoration: none;
@@ -35,12 +51,66 @@ nav ul li {
 	padding: 1.5rem;
 }
 
-.menu:hover {
+.menu-item:hover {
 	background-color: white;
 	color: #db0000;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .active {
 	background-color: white;
 	color: #db0000;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.lang {
+	margin-bottom: auto;
+}
+
+.active-lang {
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	background-color: white;
+	border-bottom-left-radius: 5px;
+	padding: 0.3em;
+	/*line-height: 2.5;*/
+}
+
+.active-lang span {
+	line-height: 2;
+	margin: auto;
+}
+
+.active-lang img {
+	margin: auto;
+	max-width: 40px;
+	max-height: 27px;
+}
+
+/*.active-lang:before {
+	content: '';
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/itflag.png);
+}*/
+
+div.lang ul {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	border: 1px solid #f8f8f8;
+}
+
+div.lang ul li {
+	list-style: none;
+}
+
+div.lang ul li a {
+	color: black;
+	text-decoration: none;
 }
