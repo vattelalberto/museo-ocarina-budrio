@@ -4,7 +4,8 @@ body {
 }
 
 header {
-	background-color: #db0000;
+	/*background-color: #db0000;*/
+	background-color: #ffe066;
 	color: white;
 }
 
@@ -30,11 +31,14 @@ nav {
 	margin-top: auto;
 }
 
-nav div.menu ul {
-	list-style: none;
-	text-align: center;
+div.menu ul {
 	margin: 0;
-	padding: 0;
+	margin-right: 3vw;
+	padding: 1rem 1rem 0 1rem;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #db0000;
+	min-width: 30vw;
 }
 
 nav div.menu ul li {
@@ -46,9 +50,12 @@ nav div.menu ul li {
 	display: inline-block;
 	color: white;
 	text-decoration: none;
-	font-size: 150%;
+	font-size: 130%;
 	text-transform: uppercase;
+	text-align: center;
 	padding: 1.5rem;
+	margin-bottom: 0;
+	width: 9rem;
 }
 
 .menu-item:hover {
@@ -65,66 +72,83 @@ nav div.menu ul li {
 	border-top-right-radius: 5px;
 }
 
-.lang {
-	/*margin-bottom: auto;*/
+div.lang {
 	position: relative;
+	padding: 1rem;
 }
+
 
 .active-lang {
 	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	color: black;
-	background-color: white;
-	border-bottom-left-radius: 5px;
-	padding: 0.3em;
+	padding: 0.3rem;
+	display: inline-block;
+	border-radius: 10px;
+	font-size: 16px;
+	width: 4.5rem;
 }
 
 .active-lang span {
-	line-height: 2;
 	margin: auto;
+	height: 1rem;
+	padding-left: 0.5em;
 }
 
 .active-lang img {
 	margin: auto;
-	height: 1em;
-	width: 1.5em;
-}
-
-.lang ul li a img {
-	height: 1em;
-	width: 1.5em;
-	vertical-align: middle;
+	height: 1rem;
+	width: 1.5rem;
 }
 
 div.lang ul {
 	margin: 0.5em 0.5em 0 0;
 	padding: 0;
 	background-color: white;
-	border: 1px solid #f8f8f8;
-	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+	border: 0px solid #f8f8f8;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 	border-radius: 5px;
 	display: none;
 	position: absolute;
+	min-width: 4.5rem;
 }
 
-div.lang ul li {
+.lang-item {
 	list-style: none;
+	margin: 0;
+	padding: auto;
+	text-align: center;
 }
 
-div.lang ul li a {
+.lang-item a img {
+	height: 1rem;
+	width: 1.5rem;
+	vertical-align: middle;
+}
+
+.lang-item a {
 	color: black;
 	text-decoration: none;
 	display: block;
 	padding: 0.3em;
 }
 
-div.lang ul li:hover {
+.lang-item a span {
+	padding-left: 0.5em;
+}
+
+.lang-item:hover {
 	background-color: #f2f2f2;
 }
 
-.lang:hover ul {
+div.lang:hover ul {
 	display: block;
+}
+
+div.lang:hover .lang-item {
+	display: block;
+}
+
+.active-lang:hover {
+	border-radius: 10px;
 }
 
 .museo {
@@ -140,18 +164,36 @@ div.lang ul li:hover {
 	text-align: center;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.6);
-	margin: 1rem;
+	margin: 10vh 3vw;
 	padding: 1rem 3rem;
 	border-radius: 2rem;
+}
+
+h2 {
+	margin: 3rem;
+	font-size: 250%;
+}
+
+.museo p {
+	margin: 4rem 4rem 2rem 3rem;
+	text-align: justify;
 }
 
 .museo div a {
 	color: black;
 	display: inline-block;
 	text-decoration: none;
+	/*background-color: #ffcc33;*/
 	background-color: #ffcc33;
 	padding: 1rem;
-	border: solid 3px #e6ac00;
+	/*border: solid 3px #e6ac00;*/
+	border: solid 4px #db0000;
 	border-radius: 1rem;
-	margin: auto;
+	margin: 2rem;
+	transition-duration: 0.3s;
+}
+
+.museo div a:hover {
+	background-color: #db0000;
+	color: white;
 }
