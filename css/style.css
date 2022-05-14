@@ -1,11 +1,12 @@
 body {
 	margin: 0px;
 	scroll-behavior: smooth;
+	width: 100vw;
 }
 
 header {
 	/*background-color: #db0000;*/
-	background-color: #ffe066;
+	background-color: #dddddd;
 	color: white;
 }
 
@@ -155,7 +156,7 @@ div.lang:hover .lang-item {
 	background-image: url(../img/museo.jpg);
 	background-size: cover;
 	max-width: 100vw;
-	border-bottom: solid 2px #ffe066;
+	border-bottom: 2px;
 }
 
 .museo div {
@@ -203,7 +204,7 @@ main section p {
 	background-image: url(../img/visita.jpg);
 	background-size: cover;
 	max-width: 100vw;
-	border-bottom: solid 2px #ffe066;
+	border-bottom: 2px;
 }
 
 .visita div {
