@@ -9,6 +9,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-3DWQGGQ9KH');
 	</script>
+
 	<!-- meta -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,23 +28,31 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
 	<title>Museo dell'Ocarina</title>
-
 </head>
 <body>
 	<header>
 		<h1>Museo dell'Ocarina e degli Strumenti Musicali in Terracotta Franco Ferri</h1>
-		<nav>
+		<nav class="maxw">
 			<div class="logo">
 				<a href="#"><img src="img/logo4.webp" alt="Logo Museo" /></a>
 			</div>
 			<div class="menu">
 				<ul>
 					<li><a href="#" class="menu-item active">Home</a></li>
-					<li><a href="#" class="menu-item">Il Museo</a></li>
+					<li class="museomenu">
+						<span class="museomenu drop">
+							<a href="#" class="menu-item">Il Museo</a>
+							<ul>
+								<li class="sezione"><a href="#">sezione1</a></li>
+								<li class="sezione"><a href="#">sezione2</a></li>
+								<li class="sezione"><a href="#">sezione3</a></li>
+							</ul>
+						</span>
+					</li>
 					<li><a href="#" class="menu-item">Visita</a></li>
 					<li><a href="#" class="menu-item">Contatti</a></li>
 					<li>
-						<div class="lang">
+						<div class="lang drop">
 							<span class="active active-lang">
 								<img src="img/it.webp" alt="bandiera italiana" /><!-- https://flagpedia.net --><span>IT <i class="fa-solid fa-caret-down"></i></span>
 							</span>
@@ -58,20 +67,52 @@
 		</nav>
 	</header>
 	<main>
-		<section class="museo">
-			<div>
-				<h2>Il Museo dell'Ocarina</h2>
-				<p>Intitolato a Franco Ferri, il <strong>Museo dell'Ocarina e degli Strumenti musicali in terracotta</strong> (unico al mondo) illustra l’evoluzione di questo particolare strumento musicale che ha reso il nome di Budrio famoso nel mondo, le sue tecniche di costruzione e i repertori musicali tradizionali, il tutto attraverso gli esemplari presenti e un ricco apparato documentario, bibliografico e sonoro.</p>
-				<a href="#" class="bottone">ESPLORA IL MUSEO <i class="fa-solid fa-caret-right"></i></a>
+		<section id="museobanner">
+			<div class="maxw">
+				<div class="museo">
+					<h2>Il Museo dell'Ocarina</h2>
+					<p>Intitolato a Franco Ferri, il <strong>Museo dell'Ocarina e degli Strumenti musicali in terracotta</strong> (unico al mondo) illustra l’evoluzione di questo particolare strumento musicale che ha reso il nome di Budrio famoso nel mondo, le sue tecniche di costruzione e i repertori musicali tradizionali, il tutto attraverso gli esemplari presenti e un ricco apparato documentario, bibliografico e sonoro.</p>
+					<a href="#" class="bottone">ESPLORA IL MUSEO <i class="fa-solid fa-caret-right"></i></a>
+				</div>
 			</div>
 		</section>
-		<section class="visita">
+		<section class="sezioni maxw">
+			<div class="sezione1 griglia">
+				<a href="#">
+					<img src="#" />
+					<h3>Sezione 1</h3>
+					<p>Vario testo che per ora non so cosa dovrebbe dire ma ci penserò poi mi serve solo vedere come viene</p>
+				</a>
+			</div>
+			<div class="sezione2 griglia">
+				<a href="#">
+					<img src="#" />
+					<h3>Sezione 2</h3>
+					<p>Vario testo che per ora non so cosa dovrebbe dire ma ci penserò poi mi serve solo vedere come viene</p>
+				</a>
+			</div>
+			<div class="sezione3 griglia">
+				<a href="#">
+					<img src="#" />
+					<h3>Sezione 3</h3>
+					<p>Vario testo che per ora non so cosa dovrebbe dire ma ci penserò poi mi serve solo vedere come viene</p>
+				</a>
+			</div>
+		</section>
+		<section class="visita maxw">
+			<a href="#" class="bottone">ORGANIZZA LA TUA VISITA</a>
+		</section>
+		<section class="contatti maxw">
 			<div>
-				<h3>Visita il Museo</h3>
-				<p>Il Museo è aperto al pubblico a ingresso gratuito <strong>ogni terza domenica del mese</strong>, in concomitanza con <a href="https://www.comune.budrio.bo.it/it-it/vivere-il-comune/shopping-aziende/incanti-mercanti-mercatino-dell-antiquariato-modernariato-riuso-e-creativita-52703-1-6cb819e7a348f11681629ba6322002ce">Incanti&Mercanti <i class="fa-solid fa-arrow-up-right-from-square"></i></a>.</p><p>Sono possibili aperture straordinarie a pagamento organizzate dalla Pro Loco "Lo Dolce Piano", previa prenotazione.</p>
-				<a href="#" class="bottone">ORGANIZZA UNA VISITA <i class="fa-solid fa-caret-right"></i></a>
+				<h4>Contatti</h4>
+				<p>Vario testo che ancora non so riguardo ai contatti</p>
+			</div>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.9049651598084!2d11.535069317443847!3d44.53757839999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477e2fb03e28d167%3A0x19fe878f3b17eed!2sMuseo%20dell&#39;Ocarina!5e0!3m2!1sit!2sit!4v1652719572416!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 			</div>
 		</section>
 	</main>
+	<footer class="maxw">
+	</footer>
 </body>
 </html>
