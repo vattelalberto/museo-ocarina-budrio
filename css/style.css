@@ -65,7 +65,7 @@ nav div.menu ul li {
 	text-align: center;
 	padding: 1.5rem;
 	margin-bottom: 0;
-	width: 9rem;
+	min-width: 9rem;
 	transition-duration: 0.1s;
 }
 
@@ -94,16 +94,18 @@ span.museomenu ul {
 	position: absolute;
 	background-color: white;
 	border-radius: 0;
-	padding: 5px 0px;
-	width: 9rem;
+	padding: 0;
+	/*width: 9rem;*/
 	box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3), -5px 0 5px -5px rgba(0, 0, 0, 0.3), 5px 0 5px -5px rgba(0, 0, 0, 0.3);
 	transition-duration: 0.1s;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
+
+span.museomenu ul li a { text-transform: none; }
 
 span.museomenu:hover ul {
 	display: block;
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
 }
 
 li.museomenu:hover a {
@@ -208,12 +210,13 @@ div.lang:hover .lang-item {
 	border-radius: 10px;
 }
 
-#museobanner {
-	background-image: url(../img/museo.jpg);
+.banner {
+	background: url(../img/banner.jpg);
 	background-size: cover;
+	background-position: center center;
 }
 
-#museobanner:first-child {
+.banner:first-child {
 	text-align: right;
 }
 
