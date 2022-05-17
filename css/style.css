@@ -102,7 +102,11 @@ span.museomenu ul {
 	border-bottom-left-radius: 5px;
 }
 
-span.museomenu ul li a { text-transform: none; }
+span.museomenu ul li a {
+	text-transform: none;
+	text-align: left;
+	padding: 12px 24px;
+}
 
 span.museomenu:hover ul {
 	display: block;
@@ -156,6 +160,7 @@ li.sezione a {
 	margin: auto;
 	height: 1rem;
 	width: 1.5rem;
+	border-radius: 3px;
 }
 
 div.lang ul {
@@ -181,6 +186,7 @@ div.lang ul {
 	height: 1rem;
 	width: 1.5rem;
 	vertical-align: middle;
+	border-radius: 3px;
 }
 
 .lang-item a {
@@ -282,11 +288,37 @@ h2 {
 
 .griglia {
 	display: inline-grid;
-	padding: 0 5vw;
+	padding: 0 2vw;
+	min-width: 100%;
 }
 
 h3 {
 	text-align: center;
+	margin-top: 1rem;
+}
+
+.sezioni p {
+	text-align: justify;
+}
+
+.sezioni img {
+	max-width: 100%;
+	margin: auto;
+	transition-duration: 0.2s;
+}
+
+.griglia:hover img {
+	opacity: 0.6;
+}
+
+.visita {
+	text-align: center;
+}
+
+.visita .bottone {
+	font-size: 150%;
+	border-radius: 0;
+	border: solid #db0000;
 }
 
 .br::after {
