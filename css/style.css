@@ -17,7 +17,7 @@ header {
 }
 
 .maxw {
-	max-width: 1200px;
+	max-width: 1290px;
 	margin: 0 auto;
 }
 
@@ -217,9 +217,9 @@ div.lang:hover .lang-item {
 }
 
 .banner {
-	background: url(../img/banner.jpg);
+	background: url(../img/IMG_7217.jpg);
 	background-size: cover;
-	background-position: center center;
+	background-position: left bottom;
 }
 
 .banner:first-child {
@@ -233,13 +233,18 @@ div.lang:hover .lang-item {
 	text-align: center;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.6);
-	margin: 10vh 10px;
+	margin: 10% 10px;
 	padding: 10px;
 	border-radius: 2rem;
 }
 
-h2 {
+.museo h2 {
 	margin: 10%;
+	font-size: 250%;
+}
+
+h2 {
+	margin: 2rem auto;
 	font-size: 250%;
 }
 
@@ -264,6 +269,15 @@ h2 {
 	color: white;
 }
 
+.titolo {
+	padding: 0 40px;
+}
+
+.titolo p {
+	font-size: 120%;
+	margin: 1rem;
+}
+
 .sezioni {
 	display: grid;
 	grid-template-areas: "a b c";
@@ -272,9 +286,16 @@ h2 {
 	padding-bottom: 2rem;
 }
 
+.griglia {
+	display: inline-grid;
+	padding: 0 2vw;
+	min-width: 100%;
+}
+
 .sezione1 {
 	grid-area: a;
 	border-right: 1px solid darkgray;
+	padding-left: 40px;
 }
 
 .sezione2 {
@@ -284,12 +305,7 @@ h2 {
 
 .sezione3 {
 	grid-area: c;
-}
-
-.griglia {
-	display: inline-grid;
-	padding: 0 2vw;
-	min-width: 100%;
+	padding-right: 40px;
 }
 
 h3 {
