@@ -1,0 +1,56 @@
+@media screen and (max-width: 576px) {
+	.lanci {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.navbar {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.sezioni {
+		display: block;
+		padding: 2rem;
+	}
+
+	.sezioni img {
+		width: 100%;
+	}
+
+	.griglia {
+		border: 0;
+		margin-bottom: 20px;
+	}
+
+	.museo {
+		margin: 10px 8px;
+	}
+
+	.museo p {
+		margin: 1rem;
+	}
+
+	.banner:first-child {
+		text-align: center;
+	}
+
+	.lanci {
+		grid-template-areas: "p q" "r s";
+	}
+
+	.lfloat, .rfloat {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 1120px) {
+	nav {
+		justify-content: center;
+	}
+}

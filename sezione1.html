@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abel&family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DWQGGQ9KH"></script>
 	<script>
@@ -23,6 +28,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 	<!-- icona -->
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -31,10 +37,9 @@
 </head>
 <body>
 	<header>
-		<h1>Museo dell'Ocarina e degli Strumenti Musicali in Terracotta Franco Ferri</h1>
 		<nav class="maxw">
 			<div class="logo">
-				<a href="#"><img src="img/logo4.webp" alt="Logo Museo" /></a>
+				<a href="index.html"><img src="img/logo4.webp" alt="Logo Museo" /></a>
 			</div>
 			<div class="menu">
 				<ul>
@@ -44,37 +49,163 @@
 							<a href="museo.html" class="menu-item active">Il Museo <i class="fa-solid fa-angle-down"></i></a>
 							<ul>
 								<li class="sezione"><a href="sezione1.html">L'Invenzione dell'Ocarina</a></li>
-								<li class="sezione"><a href="sezione2.html">I gruppi Ocarinistici di Budrio</a></li>
+								<li class="sezione"><a href="sezione2.html">Ocarinisti di Budrio</a></li>
 								<li class="sezione"><a href="sezione3.html">L'Ocarina oggi nel Mondo</a></li>
 							</ul>
 						</span>
 					</li>
-					<li><a href="#" class="menu-item">Visita</a></li>
-					<li><a href="#" class="menu-item">Contatti</a></li>
+					<li><a href="visita.html" class="menu-item">Visita</a></li>
+					<li><a href="contatti.html" class="menu-item">Contatti</a></li>
 					<li>
 						<div class="lang drop">
-							<span class="active active-lang">
+							<span class="active-lang">
 								<img src="img/it.webp" alt="bandiera italiana" /><!-- https://flagpedia.net --><span>IT <i class="fa-solid fa-caret-down"></i></span>
 							</span>
 							<ul>
-								<li class="lang-item"><a href="#"><img src="img/it.webp" alt="bandiera italiana"><span>IT</span></a></li>
-								<li class="lang-item"><a href="#"><img src="img/us.webp" alt="bandiera USA"><span>EN</span></a></li>
+								<li class="lang-item"><a href="#"><img src="img/it.webp" alt="bandiera italiana" class="flag"><span>IT</span></a></li>
+								<li class="lang-item"><a href="#"><img src="img/us.webp" alt="bandiera USA" class="flag"><span>EN</span></a></li>
 							</ul>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</nav>
+		<div class="navbar navbar-expand-xl">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="img/logo4.webp" alt="logo museo" /></a>
+				<div class="lang drop">
+					<span class="active-lang">
+						<img src="img/it.webp" alt="bandiera italiana" class="flag" /><!-- https://flagpedia.net --><span>IT <i class="fa-solid fa-caret-down"></i></span>
+					</span>
+					<ul>
+						<li class="lang-item"><a href="#"><img src="img/it.webp" alt="bandiera italiana" class="flag"><span>IT</span></a></li>
+						<li class="lang-item"><a href="#"><img src="img/us.webp" alt="bandiera USA" class="flag"><span>EN</span></a></li>
+					</ul>
+				</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item group active">
+							<a class="nav-link active" href="museo.html">Il Museo</a>
+							<ul>
+								<li><a class="subnav active" href="sezione1.html">L'Invenzione dell'Ocarina</a></li>
+								<li><a class="subnav active" href="sezione2.html">Ocarinisti di Budrio</a></li>
+								<li><a class="subnav active" href="sezione3.html">L'Ocarina oggi nel Mondo</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="visita.html">Visita</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contatti.html">Contatti</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
 	<main>
-		<div class="banner" style="height: 20rem;"></div>
-		<div class="titolo maxw">
-			<h2>L'Invenzione dell'Ocarina</h2>
-			<p>In tutto il mondo, dal Giappone all'America, la maggior parte dei “flauti globulari” fatti di terracotta (ma anche di plastica, metallo e legno) sono oggi chiamati "ocarina" (spesso “okarina”), a prescindere dal fatto che la loro forma assomigli o no a quella tipica, somigliante ad un piccolo sommergibile, dell’ocarina di Budrio.</p>
-			<p>Dire che l’ocarina è stata inventata a Budrio nel 1853, come racconteremo più avanti, è solo parzialmente vero. In realtà, i flauti di terracotta (globulari e non) sono tra gli strumenti musicali più antichi prodotti dall’uomo; abbiamo testimonianze della loro presenza già migliaia di anni fa, in Cina, Sud America e nel bacino mediterraneo. Alcuni zufoli di età romana sono esposti presso il Museo degli strumenti musicali di Roma. <br>Possiamo perciò parlare di “invenzione” dell’ocarina solo se ci riferiamo ad un particolare flauto globulare, con determinate caratteristiche sonore ed una forma che richiama, come detto, quella di un minuscolo sommergibile: la tipica “ocarina di Budrio”.</p>
-			<p>Ma da dove viene il nome "ocarina"? Si tratta di una parola non propriamente italiana, bensì tratta dal dialetto bolognese, il cui significato è “piccola oca”.</p>
-			<p>L’origine dello strumenti è infatti rintracciabile negli “zufoli”, piccoli fischietti in terracotta legati alla cultura agro-pastorale dell'Italia centrale e che assumevano spesso le fattezze degli animali più vicini all'uomo, o dall’uomo considerati beneauguranti, protettivi o magici.<br>Nel bolognese la forma dell’oca era evidentemente quella più diffusa, se è vero che <strong>Giuseppe Donati (1836-1925)</strong>, considerato unanimemente l'inventore dell'ocarina moderna, mantenne il nome di "ocarina" per i suoi strumenti musicali, che pure ben poco avevano a che fare con i rudimentali, zoomorfi fischietti di uso popolare. Nato a Budrio nel 1836, Giuseppe Donati era infatti un buon musicista dilettante. Sapeva suonare il clarinetto e il pianoforte, e i pochi suoni disarmonici prodotti dalle “ocarine” vendute nelle fiere di campagna non lo soddisfacevano.</p>
-			<p>Decise così di costruirne una lui, con più fori, in modo da poter produrre una scala di otto note ben intonate. Pare che inizialmente la forma prescelta fosse quella di una cornetta, però in terracotta. Solo che, durante la cottura, la fragile struttura si spezzò in due tronconi: la forma semplice ed essenziale di quello centrale piacque molto al nostro giovane inventore (Donati non aveva a quel tempo che diciassette anni), che decise di perfezionarla e di farne uno strumento adatto ad eseguire ogni tipo di musica.<br>Ma la vera invenzione di Donati, spinto sicuramente in questo dagli amici, fu quella di costruire un gruppo di ocarine ben intonate tra loro, tutte con la medesima forma ma con dimensioni, e quindi intonazioni, differenti. In questo modo nacque nel 1863 una sorta di strumento multiplo, suonato da più persone e formato prima da cinque poi da sette strumenti singoli, in grado di suonare musiche anche molto complesse, che andavano ben al di là delle limitate possibilità esecutive di una ocarina solista. E grazie al successo internazionale dei concerti del gruppo (1873-1878) la fama dell’ocarina si diffuse in tutta Europa.</p>
+		<div class="banner titolo"><h1 class="maxw">L'Invenzione dell'Ocarina</h1></div>
+		<section class="testo maxw">
+			<h2>Dallo zufolo all'ocarina</h2>
+			<p><img src="img/flautoglobulare.jpg" alt="Flauto globulare, J. Langley" class="rfloat">In tutto il mondo, dal Giappone all'America, la maggior parte dei “flauti globulari” fatti di terracotta (ma anche di plastica, metallo e legno) sono oggi chiamati <strong>"ocarina"</strong> (spesso “okarina”), a prescindere dal fatto che la loro forma assomigli o no a quella tipica, somigliante ad un piccolo sommergibile, dell’ocarina di Budrio.</p>
+			<p>Dire che l’ocarina è stata inventata a Budrio nel 1853, come racconteremo più avanti, è solo parzialmente vero. In realtà, i flauti di terracotta (globulari e non) sono tra gli strumenti musicali più antichi prodotti dall’uomo; abbiamo testimonianze della loro presenza già migliaia di anni fa, in Cina, Sud America e nel bacino mediterraneo. Alcuni zufoli di età romana sono esposti presso il Museo degli strumenti musicali di Roma.<br/>
+			Possiamo perciò parlare di “invenzione” dell’ocarina solo se ci riferiamo ad un particolare flauto globulare, con determinate caratteristiche sonore ed una forma che richiama, come detto, quella di un minuscolo sommergibile: la tipica <strong>“ocarina di Budrio”</strong>.</p>
+			<p>Ma da dove viene il nome "ocarina"? Si tratta di una parola non propriamente italiana, bensì tratta dal dialetto bolognese, il cui significato è “piccola oca”.<br/>
+			<strong>L’origine dello strumenti è infatti rintracciabile negli “zufoli”</strong>, piccoli fischietti in terracotta legati alla cultura agro-pastorale dell'Italia centrale e che assumevano spesso le fattezze degli animali più vicini all'uomo, o dall’uomo considerati beneauguranti, protettivi o magici.</p>
+			<h3>I primi prototipi</h3>
+			<p>Nel bolognese la forma dell’oca era evidentemente quella più diffusa, se è vero che <strong>Giuseppe Donati (1836-1925)</strong>, considerato unanimemente <strong>l'inventore dell'ocarina moderna</strong>, mantenne il nome di "ocarina" per i suoi strumenti musicali, che pure ben poco avevano a che fare con i rudimentali, zoomorfi fischietti di uso popolare. Nato a Budrio nel 1836, Giuseppe Donati era infatti un buon musicista dilettante. Sapeva suonare il clarinetto e il pianoforte, e i pochi suoni disarmonici prodotti dalle “ocarine” vendute nelle fiere di campagna non lo soddisfacevano.</p>
+			<p><img src="img/prototipo.jpg" class="lfloat">Decise così di costruirne una lui, con più fori, in modo da poter produrre una scala di otto note ben intonate. Pare che inizialmente la forma prescelta fosse quella di una <strong>cornetta</strong>, però in terracotta. Solo che, durante la cottura, la fragile struttura si spezzò in due tronconi: la forma semplice ed essenziale di quello centrale piacque molto al nostro giovane inventore (Donati non aveva a quel tempo che diciassette anni), che decise di perfezionarla e di farne uno strumento adatto ad eseguire ogni tipo di musica.<br/>
+			Ma la vera invenzione di Donati, spinto sicuramente in questo dagli amici, fu quella di <strong>costruire un gruppo di ocarine ben intonate tra loro</strong>, tutte con la medesima forma ma con dimensioni, e quindi intonazioni, differenti. In questo modo nacque nel 1863 una sorta di strumento multiplo, suonato da più persone e formato prima da cinque poi da sette strumenti singoli, in grado di suonare musiche anche molto complesse, che andavano ben al di là delle limitate possibilità esecutive di una ocarina solista. E grazie al successo internazionale dei concerti del gruppo (1873-1878) la fama dell’ocarina si diffuse in tutta Europa.</p>
+			<img src="img/teca1.jpg" alt="Teca 1" class="pieno">
+		</section>
+		<section class="testo maxw">
+			<h2>Giuseppe Donati</h2>
+			<h3>Intervista all'inventore</h3>
+			<div class="quote">
+				<img src="img/giuseppedonati.jpg" alt="Giuseppe Donati" class="rfloat">
+				<p>“Donati, di nome Giuseppe, nato a Budrio il 2 dicembre 1836, aveva già percorso le scuole elementari, di latino; aveva imparato la teoria musicale e il pianoforte; suonava il clarino nella banda di Budrio [...]; quando gli venne in mente di fare uno scherzo. Immaginò, cioè, uno strumento musicale simile alle ocarine di terra cotta che si vendono ancora nelle fiere, col becco, colla coda e panciute. La differenza tra queste e quella era di genere musicale. poichè l’ocarina (di Donati) [...] con quattro fori ai fianchi, suonava. Con essa si poteva eseguire qualche facile melodia, contenuta però nell’estensione di un’ottava. Lo scherzo piacque ai musicisti di Budrio e il Donati ne concepì un altro [...]. Eseguì con della creta un oggetto somigliante a una cornetta. Ma continuando a maneggiarlo, l’oggetto si spezzò: caddero l’imboccatura e la canna conduttrice del fiato. La parte superstite mantenne una forma tale che rivelò al Donati l’ocarina definitiva, quella destinata alla popolarità. Egli si diede a fabbricarne altre forando buchi per tutte le dieci dita in posizioni comode.</p>
+				<p>Trascorsero giorni febbrili pel giovane inventore, allora diciassettenne. Tutta Budrio lo seguiva e sperava in lui. L’odierna città delle ocarine, nonché delle tagliatelle, tanto cara ai Bolognesi che la scelgono a mèta di loro passeggiate festive, presentiva il suo destino. L’ocarina del Donati, infatti, la circonfuse di gloria [...] Il primo sprazzo di luce l’avvolse quando il Donati ebbe compiute cinque ocarine, di grandezze diverse, le quali comprendevano insieme, tra bassi e acuti, un’estensione di note pari a quella del pianoforte. I cinque istrumenti passarono ad altrettanti suonatori scelti fra i più appassionati musicanti di Budrio, tra i quali il Donati. Essi formarono il “Concerto delle ocarine” e crearono felicità del paese per qualche settimana, andarono intorno, tutte le sere, a suonare in osterie e in case private."</p>
+			</div>
+			<h3>Giuseppe Donati (Budrio, 1836 – Milano, 1925)</h3>
+			<p>Un ragazzo budriese, appassionato di musica, un giorno non meglio precisato del 1853 cominciò a fare degli esperimenti con l'argilla: esperimenti musicali. Dopo vari tentativi, trovò una forma comoda da tenere in mano e abbastanza grande da poter metterci una decina di buchi per le dita. Era nata la prima <strong>ocarina di budrio</strong>.<br/>
+			Quel ragazzo era <strong>Giuseppe Donati</strong>, l'inventore di uno strumento musicale che ancora oggi in tutto il mondo mantiene il nome, dialettale, che lui gli diede.<br/>
+			Attivo dapprima a Budrio, poi a Bologna, e infine a Milano dove morirà nel 1925.</p>
+			<img src="img/teca2.jpg" alt="Teca 2" class="pieno">
+		</section>
+		<section class="testo maxw">
+			<div>
+				<h2>Fratelli Mezzetti</h2>
+				<h3>Alberto (Budrio, 1843 – Londra, 1906) ed Ercole (Budrio, 1841 – Parigi, 1913) Mezzetti</h3>
+				<p>Entrambi maestri elementari, facevano parte del gruppo di amici che aiutò Giuseppe Donati nel lavoro di perfezionamento dello strumento, lavoro che portò alla <strong>creazione del primo settimino di ocarine e alla nascita del primo complesso ocarinistico</strong>. Il successo  musicale del gruppo li portò a suonare nelle maggiori città europee.<br/>
+				<strong>Ercole</strong> impiantò a Parigi un laboratorio per la costruzione di ocarine, attivo dal 1877 al 1912. Le sue ocarine, alcune dotate di un pistone che consentiva di variarne l'intonazione, vinsero numerosi premi in concorsi internazionali. Molte di esse sono decorate in stile Art Nouveau. <strong>Alberto</strong> si stabilì a Londra nel 1879. Abile suonatore di molti strumenti, fu insegnante di musica e concertista, nonché rivenditore delle ocarine costruite dal fratello. Pubblicò inoltre un ottimo Metodo per ocarina.</p>
+			</div>
+			<div>
+				<h2>Heinrich Fiehn</h2>
+				<h3>Attivo a Vienna dal 1876 agli anni 1930</h3>
+				<p>Fiehn era un giovane scultore appassionato di musica. Una sera del 1876 assistette ad un concerto del gruppo budriese, in tournée a Vienna. Restò molto impressionato dal nuovo strumento, tanto che decise di diventare egli stesso un costruttore di ocarine.<br/>
+				L'invenzione di un particolare stampo in grado di produrne in serie a basso costo e un'abile politica commerciale fecero sì che i suoi strumenti si diffondessero <strong>in tutto il mondo</strong>, sbaragliando la concorrenza. Lanciò la moda delle ocarine dipinte di nero con finiture in oro, presto seguita dagli altri costruttori. A causa del grande successo commerciale di Fiehn, <strong>il pubblico americano ha a lungo identificato nell'Austria la patria dell'ocarina</strong>.</p>
+			</div>
+			<img src="img/teca3.jpg" alt="Teca 3" class="pieno">
+		</section>
+		<section class="testo maxw">
+			<h2>Cesare Vicinelli</h2>
+			<h3>Budrio, 1841 – Bologna, 1920</h3>
+			<p>Anche Cesare Vicinelli faceva parte della cerchia di giovani amici che suonavano con Donati nella banda del paese e che lo seguirono e consigliarono nella laboriosa fase di perfezionamento dello strumento. Suonatore di chitarra e trombone, Vicinelli impiantò a Budrio un proprio laboratorio quando Donati, nel 1878, decise di trasferirsi a Bologna. 
+			Le ocarine di Vicinelli sono considerate ancora oggi tra le migliori per le loro qualità sonore ed estetiche, tanto da far definire il costruttore lo <strong>“Stradivari dell'ocarina”</strong>. È stato il primo (perlomeno in Italia) a meccanizzare la costruzione delle ocarine utilizzando stampi metallici.<br/>
+			Una curiosità, tra mito e realtà: secondo alcune fonti, in rotta con gli altri membri del gruppo durante una tournée in Portogallo (pare che avesse un carattere un po' suscettibile), Vicinelli costruì ex novo un set di strumenti e, dopo aver insegnato a suonare l'ocarina ad alcuni orchestrali locali, partì con loro da Lisbona alla volta del Brasile.</p>
+			<img src="img/teca4.jpg" alt="Teca 4" class="pieno">
+		</section>
+		<section class="testo maxw">
+			<h2>Guido Chiesa</h2>
+			<h3>Budrio, 1884 – Budrio, 1965</h3>
+			<p>Allievo ed aiutante di <strong>Vicinelli</strong>, alla sua morte ne ereditò casa e laboratorio, posti dove ora c'è la piscina comunale. Le sue ocarine ricordano , per quanto riguarda la forma e la sonorità, quelle di Vicinelli, ma a volte le esigenze dovute all'intensificarsi della produzione (molti pezzi erano esportati) andavano a discapito della cura nell'intonazione.</p>
+			<img src="img/teca6.jpg" alt="Teca 6" class="pieno">
+		</section>
+		<section class="testo maxw">
+			<h2>Emilio Cesari</h2>
+			<h3>Budrio, 1888 – San Remo, 1962</h3>
+			<p>Diplomato in corno, nel 1919 si unì in società con l'anziano Vicinelli per produrre ocarine. Dopo pochi mesi però Vicinelli morì e la società, ovviamente, si sciolse.<br/> 
+			Trasferitosi nel 1929 a San Remo, dove aveva vinto un concorso per suonare il corno nell'orchestra del Casinò, Cesari impiantò anche là un piccolo laboratorio dal quale cominciò a spedire ocarine in tutto il mondo. Produsse strumenti generalmente ben intonati e spesso cercò di seguire la moda del momento (vedi ad es. l'ocarina con su disegnate le chiavi del saxofono, in omaggio alla musica jazz, o l'ocarina a forma di pistola con su scritto “Alt! Chi va là?”, risalente al periodo bellico).</p>
+			<img src="img/teca7.jpg" alt="Teca 7" class="pieno">
+		</section>
+		<section class="testo maxw">
+			<h2>Arrigo Mignani</h2>
+			<h3>Budrio, 1918 – Budrio, 1997</h3>
+			<p>Eccellente violinista e chitarrista classico, agli inizi degli anni '60 acquistò dagli eredi di Emilio Cesari alcuni stampi ed iniziò a fabbricare ocarine a Budrio. Attivo fino al 1991, è stato anche membro del gruppo dal 1963 ai primi anni '70. I suoi strumenti, caratterizzati dalla potenza del suono, sono particolarmente apprezzati dai solisti della musica da ballo romagnola.</p>
+			<img src="img/teca8.jpg" alt="Teca 8" class="pieno">
+		</section>
+		<section class="sezioni spazio maxw">
+			<div class="sezione1 griglia active">
+				<a href="sezione1.html">
+					<img src="img/giuseppedonati.jpg" alt="giuseppe donati al lavoro su delle ocarine" />
+					<h3>L'Invenzione dell'Ocarina</h3>
+					<p>Vario testo che per ora non so cosa dovrebbe dire ma ci penserò poi mi serve solo vedere come viene</p>
+				</a>
+			</div>
+			<div class="sezione2 griglia">
+				<a href="sezione2.html">
+					<img src="img/gruppocarine1.jpg" alt="primo storico gruppo ocarinistico di Budrio" />
+					<h3>Ocarinisti di Budrio</h3>
+					<p>Vario testo che per ora non so cosa dovrebbe dire ma ci penserò poi mi serve solo vedere come viene</p>
+				</a>
+			</div>
+			<div class="sezione3 griglia">
+				<a href="sezione3.html">
+					<img src="img/ocarina_festival.png" alt="monumento per il festival internazionale dell'ocarina" />
+					<h3>L'Ocarina oggi nel Mondo</h3>
+					<p>Vario testo che per ora non so cosa dovrebbe dire ma ci penserò poi mi serve solo vedere come viene</p>
+				</a>
+			</div>
+		</section>
+		<div class="torna">
+			<a href="#"><i class="fa-solid fa-chevron-up"></i></a>
 		</div>
+	</main>
 </body>
 </html>
