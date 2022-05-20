@@ -501,6 +501,7 @@ div.griglia.active {
 .visita .bottone {
 	font-size: 150%;
 	margin: 3rem auto;
+	width: 350px;
 }
 
 .contatti {
