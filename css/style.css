@@ -40,6 +40,7 @@ h1 {
 	text-align: left;
 	padding: 70px 1rem;
 	position: relative;
+	font-size: 300%;
 }
 
 .titolo {
@@ -287,7 +288,7 @@ div.lang:hover .lang-item {
 	text-align: center;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.6);
-	margin: 10% 10px;
+	margin: 2rem 10px;
 	padding: 10px;
 	border-radius: 2rem;
 }
@@ -404,7 +405,7 @@ h3 {
 }
 
 div.griglia.active {
-	opacity: 0.6;
+	opacity: 0.4;
 }
 
 .lanci {
@@ -437,6 +438,40 @@ div.griglia.active {
 	grid-area: "s";
 }
 
+.teche {
+	display: grid;
+	grid-template-areas: "it eu en";
+	margin: 30px auto;
+	grid-gap: 2vw;
+}
+
+.teche .griglia {
+	padding: 0;
+}
+
+.teche .griglia:hover {
+	opacity: 1;
+}
+
+.teche img {
+	margin: auto;
+	transition-duration: 0.2s;
+	border-radius: 5px;
+	min-height: 100%;
+}
+
+.teca1 {
+	grid-area: "it";
+}
+
+.teca2 {
+	grid-area: "eu";
+}
+
+.teca3 {
+	grid-area: "en";
+}
+
 .griglia i {
 	font-size: 80%;
 }
@@ -466,6 +501,40 @@ div.griglia.active {
 .visita .bottone {
 	font-size: 150%;
 	margin: 3rem auto;
+}
+
+.contatti {
+	margin: auto 30px;
+}
+
+footer {
+	border-top: solid 1px rgba(0, 0, 0, 0.2);
+	background-color: #dddddd;
+	padding-top: 25px;
+}
+
+.mappa {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.foot {
+	padding-top: 15px;
+	padding-bottom: 40px;
+	padding: 15px 20px 40px;
+}
+
+.foot p {
+	margin-top: 10px;
+}
+
+.foot a {
+	color: black;
+}
+
+.foot a:hover {
+	text-decoration: underline;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .br::after {
@@ -529,4 +598,8 @@ div.griglia.active {
 
 .navbar-brand img{
 	max-width: 170px;
+}
+
+p.card-text {
+	margin: 0;
 }

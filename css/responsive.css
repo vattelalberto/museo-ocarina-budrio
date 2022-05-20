@@ -18,6 +18,10 @@
 		padding: 2rem;
 	}
 
+	.teche {
+		display: block;
+	}
+
 	.sezioni img {
 		width: 100%;
 	}
@@ -46,6 +50,11 @@
 	.lfloat, .rfloat {
 		max-width: 100%;
 		height: auto;
+		width: 100%;
+	}
+
+	.quote {
+		margin: auto 1rem;
 	}
 }
 
