@@ -1,0 +1,1 @@
+Il Museo dell'Ocarina e degli Strumenti musicali in terracotta (unico al mondo) illustra l’evoluzione di questo particolare strumento musicale che ha reso il nome di Budrio famoso nel mondo, le sue tecniche di costruzione e i repertori musicali tradizionali, il tutto attraverso gli esemplari presenti e un ricco apparato documentario, bibliografico e sonoro.
