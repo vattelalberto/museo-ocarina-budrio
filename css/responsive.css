@@ -31,6 +31,10 @@
 		margin-bottom: 20px;
 	}
 
+	div.griglia.active {
+	display: none;
+	}
+
 	.museo {
 		margin: 10px 8px;
 	}
