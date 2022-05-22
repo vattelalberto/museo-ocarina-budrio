@@ -368,7 +368,13 @@ h3 {
 	text-align: center;
 }
 
-.griglia a {
+.teche .card {
+	padding: 2vw;
+	min-width: 100%;
+	text-align: center;
+}
+
+.griglia a, .teche .card a {
 	color: black;
 }
 
@@ -408,7 +414,7 @@ h3 {
 	border-radius: 5px;
 }
 
-.griglia:hover {
+.griglia:hover, {
 	opacity: 0.6;
 }
 
@@ -447,17 +453,24 @@ div.griglia.active {
 }
 
 .teche {
+	column-count: 2;
+	margin: 30px auto;
+	grid-gap: 2vw;
+}
+
+.grid {
 	display: grid;
 	grid-template-areas: "it eu en";
 	margin: 30px auto;
 	grid-gap: 2vw;
 }
+}
 
-.teche .griglia {
+.teche .card {
 	padding: 0;
 }
 
-.teche .griglia:hover {
+.teche .card:hover {
 	opacity: 1;
 }
 
