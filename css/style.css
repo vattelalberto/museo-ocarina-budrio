@@ -453,15 +453,22 @@ div.griglia.active {
 	grid-gap: 2vw;
 }
 
-.teche .griglia {
+.teche2 {
+	display: grid;
+	grid-template-areas: "it eu";
+	margin: 30px auto;
+	grid-gap: 2vw;
+	}
+
+.teche .griglia, .teche2 .griglia {
 	padding: 0;
 }
 
-.teche .griglia:hover {
+.teche .griglia:hover, .teche2 .griglia:hover {
 	opacity: 1;
 }
 
-.teche img {
+.teche img, .teche2 img {
 	margin: auto;
 	transition-duration: 0.2s;
 	border-radius: 5px;
