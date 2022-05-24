@@ -49,6 +49,7 @@ h1 {
 	padding: 70px 1rem;
 	position: relative;
 	font-size: 300%;
+	max-width: 100vw;
 }
 
 .titolo {
